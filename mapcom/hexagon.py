@@ -1,3 +1,6 @@
+"""
+@author: jocelin - RYJ
+"""
 import math
 
 
@@ -42,8 +45,6 @@ class Hexagon:
             x + a, y), Point(x + a / 2, y - h), Point(x - a / 2, y - h), Point(x - a, y)
         self.points = [self.p1, self.p2, self.p3, self.p4, self.p5, self.p6]
         self.points.reverse()
-        self.A = self.area()
-
     def tuple(self):
         return self.center.tuple()
 
@@ -51,14 +52,6 @@ class Hexagon:
         a, h, x, y = self.a, self.h, self.center.x, self.center.y
         return Point(x, y + 2 * h), Point(x, y - 2 * h), Point(x - 3 * a / 2, y + h), Point(
             x + 3 * a / 2, y + h), Point(x - 3 * a / 2, y - h), Point(x + 3 * a / 2, y - h)
-
-    def area(self):
-        area = 0
-        for i in range(1, len(self.points) - 1):
-            a = vector(self.points[0], self.points[i])
-            b = vector(self.points[0], self.points[i + 1])
-            area += (a.x * b.y - a.y * b.x) / 2
-        return area
 
     # This algo check if points is inside any of 6 equilateral triangles of hexagons
     def is_inside(self, m: Point):
@@ -68,22 +61,6 @@ class Hexagon:
             if 0 <= t <= 1 and 0 <= tp <= 1 and (t + tp) <= 1:
                 return True
         return False
-
-    """def is_inside(self, p: Point) -> bool:
-        area = 0
-        for i in range(len(self.points)):
-            # r = lambda n: n % len(self.points) - 1
-            a = vector(p, self.points[i])
-            b = vector(p, self.points[(i + 1) if i < len(self.points) - 1 else 0])
-            v = (a.x * b.y - a.y * b.x) / 2
-            # print(v, i)
-            if v < 0:
-                return False
-            # print(i,(i + 1) if i < len(self.points) - 1 else 0)
-            area += v
-        # print('Area', abs(area), abs(area) == self.A)
-        # exit()
-        return -0.00000000000001 < abs(area) - self.A < 0.00000000000001"""
 
     def __eq__(self, other):
         return self.center == other.center

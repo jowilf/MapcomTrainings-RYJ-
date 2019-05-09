@@ -1,3 +1,6 @@
+"""
+@author: yannick - RYJ
+"""
 filename = 'mobile.in'
 facturations = [{"call_per_mn": 30, "data_per_mb": 40},
                 {"call_per_mn": 35, "data_per_mb": 30},

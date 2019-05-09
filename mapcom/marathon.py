@@ -1,3 +1,6 @@
+"""
+@author: jocelin - RYJ
+"""
 class Problem:
     def __init__(self, _id):
         self.id = id
@@ -47,12 +50,9 @@ with open('marathon.in') as f:
         last_decision = False
         for i in range(S):
             line = f.readline().split()
-            # print(line)
             tId, pId, time, result = int(line[0]) - 1, idc(line[1]), Time(line[2]), line[3]
             submissions.append((tId, pId, time, result))
-        # print(submissions)
         submissions.sort(key=lambda k: k[2])
-        # print(submissions)
         i = 0
         for tId, pId, time, result in submissions:
             if result == "Yes":
@@ -76,25 +76,11 @@ with open('marathon.in') as f:
             if cond1 and cond2 and cond3 and cond4:
                 if start_time == None:
                     start_time = time
-                    # print('NOne', i, start_time == None)
-                # else:
                 end_time = submissions[i + 1][2] if (i + 1) < S else '--:--:--'
                 last_end = i
-                # print(start_time, end_time)
             i += 1
-            # if last_end = i
-            # print('endtime', end_time)
-            """elif i == S - 1 and last_decision:
-                end_time = time
-            last_decision = cond1 and cond2 and cond3 and cond4"""
-            # print(start_time, end_time,last_end)
         if start_time == None:
             print('--:--:-- --:--:--')
         else:
             print(start_time, end_time)
-            """if last_end == S - 1:
-                print(start_time, '--:--:--')
-            else:
-                print(start_time, end_time)"""
         T, P, S = map(int, f.readline().split())
-        # exit()

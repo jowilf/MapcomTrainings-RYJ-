@@ -1,3 +1,6 @@
+"""
+@author: jocelin - RYJ
+"""
 with open('plane.in') as f:
     for _ in range(int(f.readline())):
         N, start, end = (f.readline().split())

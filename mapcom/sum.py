@@ -1,3 +1,6 @@
+"""
+@author: jocelin - RYJ
+"""
 def remind(a, b, e=0):
     sum, rem_ = a + b + e, 0
     if sum >= 10:
