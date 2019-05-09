@@ -1,3 +1,6 @@
+"""
+@author: yannick - RYJ
+"""
 filename = 'parliament.in'
 with open(filename, 'r') as f:
     end = False
