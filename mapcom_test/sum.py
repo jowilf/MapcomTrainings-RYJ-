@@ -1,6 +1,3 @@
-"""
-@author: jocelin - RYJ
-"""
 import itertools
 
 N = 10000
