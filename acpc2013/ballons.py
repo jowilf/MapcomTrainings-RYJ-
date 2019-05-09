@@ -1,6 +1,3 @@
-"""
-@author: jocelin - RYJ
-"""
 with open('balloons.in', 'r') as f:
     for _ in range(int(f.readline())):
         n, x, y = f.readline().split()  # map(int, input())

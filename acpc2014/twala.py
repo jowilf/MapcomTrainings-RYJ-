@@ -1,6 +1,3 @@
-"""
-@author: romaric - RYJ
-"""
 with open('tawla.in') as f:
     T = int(f.readline())
     Ts = []

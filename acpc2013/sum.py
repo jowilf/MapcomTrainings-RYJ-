@@ -1,6 +1,3 @@
-"""
-@author: yannick - RYJ
-"""
 from itertools import accumulate
 
 filename = 'sum.in'

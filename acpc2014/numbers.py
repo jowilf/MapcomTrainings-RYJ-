@@ -1,6 +1,3 @@
-"""
-@author: jocelin - RYJ
-"""
 f = open('numbers.in', 'r')
 t = int(f.readline())
 for _ in range(t):

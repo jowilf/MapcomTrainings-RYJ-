@@ -1,6 +1,3 @@
-"""
-@author: jocelin - RYJ
-"""
 def is_possible(c, i, arr):
     if c == 0:
         return True

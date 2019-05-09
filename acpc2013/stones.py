@@ -1,8 +1,3 @@
-"""
-@author: yannick - RYJ
-"""
-
-
 def stones(n, m, x):
     if (n > m):
         if (n % m == 0 and m == x) or n % m == x:

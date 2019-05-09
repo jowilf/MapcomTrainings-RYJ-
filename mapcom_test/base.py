@@ -1,6 +1,3 @@
-"""
-@author: jocelin - RYJ
-"""
 with open('base.in') as f:
     for _ in range(int(f.readline())):
         k, n = f.readline().split()

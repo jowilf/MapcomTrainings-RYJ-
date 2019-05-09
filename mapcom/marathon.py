@@ -1,6 +1,3 @@
-"""
-@author: jocelin - RYJ
-"""
 class Problem:
     def __init__(self, _id):
         self.id = id

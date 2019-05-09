@@ -1,6 +1,3 @@
-"""
-@author: yannick - RYJ
-"""
 from math import log
 
 filename = 'tree.in'

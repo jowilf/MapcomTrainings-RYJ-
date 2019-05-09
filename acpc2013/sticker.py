@@ -1,6 +1,3 @@
-"""
-@author: yannick - RYJ
-"""
 filename = 'sticker.in'
 with open(filename, 'r') as f:
     number_of_test_cases = int(f.readline())

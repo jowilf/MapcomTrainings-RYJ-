@@ -1,8 +1,3 @@
-"""
-@author: romaric - RYJ
-"""
-
-
 filename = 'bug.in'
 with open(filename, 'r') as f:
     t = int(f.readline())

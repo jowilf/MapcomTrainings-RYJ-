@@ -1,6 +1,3 @@
-"""
-@author: yannick - RYJ
-"""
 from collections import Counter
 
 filename = 'robot.in'

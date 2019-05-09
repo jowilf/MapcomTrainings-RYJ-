@@ -1,6 +1,3 @@
-"""
-@author: jocelin - RYJ
-"""
 import bisect
 
 with open('ordering.in') as f:

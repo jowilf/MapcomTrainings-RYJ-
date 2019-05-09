@@ -1,6 +1,3 @@
-"""
-@author: jocelin - RYJ
-"""
 import math
 
 
