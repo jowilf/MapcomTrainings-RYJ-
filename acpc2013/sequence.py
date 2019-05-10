@@ -21,9 +21,6 @@ def interval_len(a=0, b=0, ferm1=True):
     else:
         return int(b) - int(a) + (1 if int(a) != a else 0)
 
-
-# pref = 'acpc2013-IO-J/'
-# out = open(pref + 'sequence.out', 'r').readlines()
 with open('sequence.in', 'r') as f:
     for _ in range(int(f.readline())):
         n1, f1, d1, n2, f2, d2 = map(int, f.readline().split())
