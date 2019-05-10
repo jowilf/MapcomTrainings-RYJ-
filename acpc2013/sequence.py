@@ -6,10 +6,6 @@ def bezout_coefs(a, b):
         return gcd, v, u - (a // b) * v
 
 
-def swap(a, b):
-    return b, a
-
-
 def ilen(a, b):
     import math
     return int(b) - math.ceil(a) + 1
